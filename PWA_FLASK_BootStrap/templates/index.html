@@ -1,0 +1,137 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+    <div class="card mb-3" style="max-width: 100%;">
+        <div class="row no-gutters">
+            <div class="col-md-4 mx-auto text-center">
+                <img src="{{ url_for('static', filename='images/pwa.png') }}" class="card-img" alt="smile">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+
+                    <h5 class="card-title">PWA의 3가지 기준</h5>
+                    <ul class="lead">
+                        <li> It must run under HTTPS.</li>
+                        <li> It must include a Web App Manifest.</li>
+                        <li> It must implement a service worker.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="characteristics" style="margin-top:50px;">
+
+        <h2>PWA(Progressive Web Application)의 특징</h2>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 d-flex align-items-stretch">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Progressive</h5>
+                            <p class="card-text">By definition, a progressive web app must work on any device and
+                                enhance
+                                progressively, taking advantage of any features available on the user’s device and
+                                browser.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex align-items-stretch">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Discoverable</h5>
+                            <p class="card-text">Because a progressive web app is a website, it should be discoverable
+                                in
+                                search engines. This is a major advantage over native applications, which still lag
+                                behind
+                                websites in searchability.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex align-items-stretch">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Linkable</h5>
+                            <p class="card-text">As another characteristic inherited from websites, a well-designed
+                                website
+                                should use the URI to indicate the current state of the application. This will enable
+                                the
+                                web app to retain or reload its state when the user bookmarks or shares the app’s
+                                URL.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex align-items-stretch">
+                    <div class="card" >
+                        <div class="card-body">
+                            <h5 class="card-title">Responsive</h5>
+                            <p class="card-text">A progressive web app’s UI must fit the device’s form factor and screen
+                                size.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex align-items-stretch">
+                    <div class="card" >
+                        <div class="card-body">
+                            <h5 class="card-title">App-like</h5>
+                            <p class="card-text">A progressive web app should look like a native app and be built on the
+                                application shell model, with minimal page refreshes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex align-items-stretch">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Connectivity-independent</h5>
+                            <p class="card-text">It should work in areas of low connectivity or offline (our favorite
+                                characteristic)..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex align-items-stretch">
+                    <div class="card" >
+                        <div class="card-body">
+                            <h5 class="card-title">Re-engageable</h5>
+                            <p class="card-text">Mobile app users are more likely to reuse their apps, and progressive
+                                web
+                                apps are intended to achieve the same goals through features such as push
+                                notifications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex align-items-stretch">
+                    <div class="card" >
+                        <div class="card-body">
+                            <h5 class="card-title">Installable</h5>
+                            <p class="card-text">A progressive web app can be installed on the device’s home screen,
+                                making
+                                it readily available.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 d-flex align-items-stretch">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Fresh</h5>
+                            <p class="card-text">When new content is published and the user is connected to the
+                                Internet,
+                                that content should be made available in the app.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex align-items-stretch">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Safe</h5>
+                            <p class="card-text">Because a progressive web app has a more intimate user experience and
+                                because all network requests can be intercepted through service workers, it is
+                                imperative that the app be hosted over HTTPS to prevent man-in-the-middle attacks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
